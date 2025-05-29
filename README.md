@@ -8,6 +8,18 @@ using [DistDL](https://github.com/distdl/distdl).
 
 ## Installation
 
+### Before installing the package
+
+These commands are applicable to an A100 instance based on `x86_64`
+
+```
+/opt/miniconda/bin/pip install torch
+sudo apt install libopenmpi-dev
+sudo apt update && sudo apt install -y libopenmpi3 openmpi-bin
+sudo /opt/miniconda/bin/conda install -c conda-forge mpi4py -y
+```
+
+### Install the package
 
 To install this package you can either clone it and install it in dvelopper mode:
 
