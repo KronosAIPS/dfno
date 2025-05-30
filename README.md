@@ -14,9 +14,9 @@ These commands are applicable to an A100 instance based on `x86_64`
 
 ```
 /opt/miniconda/bin/pip install torch
-sudo apt install libopenmpi-dev
-sudo apt update && sudo apt install -y libopenmpi3 openmpi-bin
+sudo apt update && sudo apt install -y libopenmpi-dev libopenmpi3 openmpi-bin
 sudo /opt/miniconda/bin/conda install -c conda-forge mpi4py -y
+sudo /opt/miniconda/bin/conda install cuda-cudart cuda-version=12 -y
 ```
 
 ### Install the package
